@@ -3,4 +3,20 @@
   top: 50px;
   right:100px;
   border-radius: 100%;
+
+body{
+background:images/fondoPokemon.jpg no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-family: 'Heebo', sans-serif
+
+}
+
+.text{
+  color:white;
+  line-height: 10px;
+text-align: center;
+
 }
