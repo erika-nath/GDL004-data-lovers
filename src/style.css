@@ -1,0 +1,45 @@
+body{
+background:images/fondoPokemon.jpg no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-family: 'Heebo', sans-serif
+
+}
+
+#show,#hide {
+	display:none;
+}
+
+div#content {
+	display:none;
+  padding:10px;
+  background-color:#f6f6f6;
+  width:900px;
+	height: 700px;
+  cursor:pointer;
+
+}
+
+input#show:checked ~ div#content {
+	display:block;
+}
+
+input#hide:checked ~ div#content {
+	display:none;
+}
+
+
+/*No me sirvio es un comentario ahora
+#contenedor1{
+  color:white;
+  line-height: 10px;
+text-align: center;
+
+}
+
+
+#cont {display: none; }
+.show:focus + .hide {display: inline; }
+.show:focus + .hide + #cont {display: block;}*/
