@@ -20,3 +20,11 @@ font-family: 'Heebo', sans-serif
 text-align: center;
 
 }
+#btns {
+  width: 75%
+}
+#btns .btn {
+  width: 30%;
+  height: 48px;
+  font-size: 24px;
+}
