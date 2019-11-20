@@ -1,8 +1,9 @@
 
-import POKEMON from './data/pokemon/pokemon.js'
-console.log(POKEMON);
+import Pokemon from './data/pokemon/pokemon.js'
+console.log(Pokemon);
 
-
+import { filterCandy } from './data.js';
+console.log(filterCandy(Pokemon));
 //NOTA:no mover por si se no funciona de la 3 a 9
  /*  import LoL from './data/lol/lol.js a la '
   import POTTER from './data/potter/potter.js'
@@ -34,4 +35,4 @@ import { example } from './data.js';*/
              target.style.display = "none";
            }
          }*/
-         document.getElementById('contenido').innerHTML=POKEMON.pokemon[1].name;
+         //document.getElementById('contenido').innerHTML=POKEMON.pokemon[1].name;

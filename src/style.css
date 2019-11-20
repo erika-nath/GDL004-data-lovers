@@ -8,10 +8,27 @@ font-family: 'Heebo', sans-serif
 
 }
 
+img {
+	position: absolute;
+  top:  50px;
+  left: 50px;
+}
+
+/*ocultar y mostrar*/
 #show,#hide {
 	display:none;
 }
 
+ /*botones ocultar y mostrar*/
+ input#show:checked ~ div#content {
+ 	display:block;
+ }
+
+ input#hide:checked ~ div#content {
+ 	display:none;
+ }
+
+/*div de debilidad*/
 div#content {
 	display:none;
   padding:10px;
@@ -19,16 +36,9 @@ div#content {
   width:900px;
 	height: 700px;
   cursor:pointer;
-
 }
 
-input#show:checked ~ div#content {
-	display:block;
-}
 
-input#hide:checked ~ div#content {
-	display:none;
-}
 
 
 /*No me sirvio es un comentario ahora
