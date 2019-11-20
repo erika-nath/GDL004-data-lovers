@@ -14,12 +14,37 @@ font-family: 'Heebo', sans-serif
 
 }
 
-.text{
+#show,#hide {
+	display:none;
+}
+
+div#content {
+	display:none;
+  padding:10px;
+  background-color:#f6f6f6;
+  width:900px;
+	height: 700px;
+  cursor:pointer;
+
+}
+
+input#show:checked ~ div#content {
+	display:block;
+}
+
+input#hide:checked ~ div#content {
+	display:none;
+}
+
+
+/*No me sirvio es un comentario ahora
+#contenedor1{
   color:white;
   line-height: 10px;
 text-align: center;
 
 }
+<<<<<<< HEAD
 #btns {
   width: 75%
 }
@@ -28,3 +53,10 @@ text-align: center;
   height: 48px;
   font-size: 24px;
 }
+=======
+
+
+#cont {display: none; }
+.show:focus + .hide {display: inline; }
+.show:focus + .hide + #cont {display: block;}*/
+>>>>>>> 1a56419cd5127d18093900d77581a55458616d7a
