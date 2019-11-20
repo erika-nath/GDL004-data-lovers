@@ -6,12 +6,22 @@ export const example = () => {
   return 'example';
 };*/
 
-/*export const filterWeaknesses=(Pokemon)=>{
-const weaknesses=Pokemon.filter(name.weaknesses=water));
-return weaknesses;
+export const filterCandy = (Pokemon) => {
+const candy= Pokemon.filter( (pkm) => {
+  for(let i=0;i<pkm.type.length;i++){
+  if(pkm.type[i] === 'Grass'){
+      return pkm;
+    }
+  }
+});
+console.log(candy)
+return candy;
 
-};*/
-export const filterItems=(Pokemon)=>{
+};
+
+
+
+/*export const filterItems=(Pokemon)=>{
 const filterItems= query => {
   return Pokemon.filter((el) =>
     el.toLowerCase().indexOf(query.toLowerCase()) > -1);
@@ -19,4 +29,4 @@ const filterItems= query => {
 };//
 
 //console.log(Pokemon('name')); //
-console.log(filterItems('water')); //
+console.log(filterItems('water')) //*/
