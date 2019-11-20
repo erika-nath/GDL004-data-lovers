@@ -1,6 +1,6 @@
 
-import POKEMON from './data/pokemon/pokemon.js'
-console.log(POKEMON);
+import Pokemon  from './data/pokemon/pokemon.js'
+console.log(Pokemon);
 
 
 //NOTA:no mover por si se no funciona de la 3 a 9
