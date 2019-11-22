@@ -1,4 +1,4 @@
-body{
+/*body{
 background:images/fondoPokemon.jpg no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -7,49 +7,60 @@ background-size: cover;
 font-family: 'Heebo', sans-serif
 
 }
+/*POKEMON titulo
 
 img {
 	position: absolute;
   top:  50px;
-  left: 50px;
+  left: 500px;
 }
 
-/*ocultar y mostrar*/
+
+
+#boton {
+	position: absolute;
+  top:  300px;
+  left: 500px;
+}
+
+/*ocultar y mostrar
 #show,#hide {
 	display:none;
+	position: absolute;
+  top:  320px;
+  left: 500px;
+
 }
 
- /*botones ocultar y mostrar*/
+ /*botones ocultar y mostrar
  input#show:checked ~ div#content {
  	display:block;
+	position: absolute;
+  top:  500px;
+  left: 500px;
+	font-family: 'Heebo', sans-serif;
+
  }
 
  input#hide:checked ~ div#content {
  	display:none;
+	font-family: 'Heebo', sans-serif;
+	top:  500px;
+  left: 500px;
+	font-family: 'Heebo', sans-serif;
+
  }
 
-/*div de debilidad*/
-div#content {
+div de debilidad
+#cont1 {
 	display:none;
   padding:10px;
   background-color:#f6f6f6;
   width:900px;
 	height: 700px;
   cursor:pointer;
-}
+	font-family: 'Heebo', sans-serif;
+	top:  500px;
+  left: 500px;
 
-
-
-
-/*No me sirvio es un comentario ahora
-#contenedor1{
-  color:white;
-  line-height: 10px;
-text-align: center;
-
-}
-
-
-#cont {display: none; }
-.show:focus + .hide {display: inline; }
-.show:focus + .hide + #cont {display: block;}*/
+}*/
