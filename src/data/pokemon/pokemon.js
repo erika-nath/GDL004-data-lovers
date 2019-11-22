@@ -1,5 +1,6 @@
-export const POKEMON = [
-  {
+
+export default [{
+
   id: 1,
   num: '001',
   name: 'Bulbasaur',
@@ -4082,4 +4083,5 @@ export const POKEMON = [
     'Ghost',
     'Dark',
   ],
+
 }];
