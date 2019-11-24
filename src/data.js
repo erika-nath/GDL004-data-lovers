@@ -1,45 +1,38 @@
-
-/* Manejo de data
-
-
-
-
-
-  /* Manejo de data */
-
-  // esta es una función de ejempl
-//export const POKEMON = () => {
-
-
-  //return 'example';
-
-//export const primerLetra = (Pokemon) => {
-//  const letra= Pokemon.map( (pkm) =>  {
-//     return '<li>'+pkm.name+' '+pkm.weaknesses+'</li>'
-//     console.log(letra);
-
-//});
-//;
-export const  = (Pokemon) => {
+//ESTO ES LO DE ANGIE  NO BORRAR DE 7 A 19
+/*export const filterCandy = (Pokemon) => {
 const candy= Pokemon.filter( (pkm) => {
- for(let i=0;i<pkm.type.length;i++){
+  for(let i=0;i<pkm.type.length;i++){
   if(pkm.type[i] === 'Grass'){
-      return( pkm);
-   }
-
- }
+      return pkm;
+    }
+  }
 });
 console.log(candy)
 return candy;
+};*/
+
+
+//en pkm se guardan los 14 pokemones ya filtrados
+export const filterType = (Pokemon) => {
+const type= Pokemon.filter( (pkm) => {
+  for(let i=0;i<pkm.type.length;i++){
+  if(pkm.type[i] === 'Grass'){
+      return pkm;
+    }
+  }
+});
+console.log(type)
+return type;
 };
-//export const soloNombre = (Pokemon) => {
-//const candy= Pokemon.slice( (pkm) => {
- //for(let i=0;i<pkm.type.length;i++){
-  //if(pkm.type[i] === 'Grass'){
-  //    return( pkm);
-  // }
- //}
-//});
-//console.log(candy)
-//return candy;
+
+
+
+
+
+
+
+
+//document.getElementById("demo").innerHTML = allweaknesses;
+//};
+
 //};
