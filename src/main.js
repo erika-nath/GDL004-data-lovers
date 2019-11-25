@@ -20,3 +20,34 @@ const template = `<div>${pkm.name}
 //ftp.innerHTML=template;
 document.getElementById('content').innerHTML += template
 });
+
+
+var fatherVisible = false; // set up a toggle so you can display block and then none.
+
+// listener for any clicks on the document.
+document.addEventListener("click", function(e) {
+    var clicked = e.target;
+    var father = document.getElementById("father");
+    //check to see if user clicks outside of the
+    if (fatherVisible && clicked != father) {
+            father.style.display = "none";
+            document.getElementById("button").innerHTML = "Click Me";
+            fatherVisible = false;
+        }
+
+}, false);
+
+document.getElementById("button").addEventListener("click", function(e) {
+    var father = document.getElementById("father");
+    e.preventDefault();
+    e.stopPropagation();
+    if (fatherVisible){
+        father.style.display = "none";
+      content.innerHTML = "Click Me";
+        fatherVisible = false;
+    } else {
+        father.style.display = "block";
+        content.innerHTML = "Opened!";
+        fatherVisible = true;
+    }
+}, false);
