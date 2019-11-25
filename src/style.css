@@ -50,17 +50,30 @@ img {
 	font-family: 'Heebo', sans-serif;
 
  }
+*/
 
-div de debilidad
-#cont1 {
-	display:none;
+
+
+.contenedor {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-wrap:wrap;
+  align-content: center;
+	background-color:#f6f6f6;
+}
+
+
+
+#father {
   padding:10px;
-  background-color:#f6f6f6;
+  background-color:green;
   width:900px;
 	height: 700px;
   cursor:pointer;
 	font-family: 'Heebo', sans-serif;
-	top:  500px;
-  left: 500px;
+	top:  700px;
+  left: 700px;
 
-}*/
+}

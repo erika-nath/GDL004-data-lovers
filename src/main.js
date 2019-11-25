@@ -19,4 +19,4 @@ const template = `<div>${pkm.name}
 </div>`
 //ftp.innerHTML=template;
 document.getElementById('content').innerHTML += template
-}); //En content se muesta el template
+});
