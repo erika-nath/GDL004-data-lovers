@@ -6,48 +6,47 @@ import Pokemon from './data/pokemon/pokemon.js'
 console.log(Pokemon);
 
 import {filterType} from './data.js'
-//console.log();
-
 
 let poke= filterType(Pokemon);//filterType es nuestro filter y Pokemon es la data con la que trabaja
+
+import {filterWater} from './data.js'
+
+let pokew= filterWater(Pokemon);
+
 //console.log(poke)
-poke.map((pkm)=>{
+/*poke.map((pkm)=>{
   //console.log(pkm)
 //let ftp = createElement('span') ya no se va a crear
 const template = `<div>${pkm.name}
 <img src="${pkm.img}"></img>
+<div>${pkm.weaknesses}</div>
 </div>`
 //ftp.innerHTML=template;
 document.getElementById('content').innerHTML += template
 });
 
 
-var fatherVisible = false; // set up a toggle so you can display block and then none.
-
-// listener for any clicks on the document.
+var contentVisible = false;
 document.addEventListener("click", function(e) {
     var clicked = e.target;
-    var father = document.getElementById("father");
-    //check to see if user clicks outside of the
-    if (fatherVisible && clicked != father) {
-            father.style.display = "none";
-            document.getElementById("button").innerHTML = "Click Me";
-            fatherVisible = false;
+    var content = document.getElementById("content");
+    if (contentVisible && clicked != content) {
+            content.style.display = "none";
+            contentVisible = false;
         }
 
 }, false);
 
 document.getElementById("button").addEventListener("click", function(e) {
-    var father = document.getElementById("father");
+    var content = document.getElementById("content");
     e.preventDefault();
     e.stopPropagation();
-    if (fatherVisible){
-        father.style.display = "none";
-      content.innerHTML = "Click Me";
-        fatherVisible = false;
+    if (contentVisible){
+        content.style.display = "block";
+        contentVisible = false;
     } else {
-        father.style.display = "block";
-        content.innerHTML = "Opened!";
-        fatherVisible = true;
+        content.style.display = "none";
+        contentVisible = true;
     }
 }, false);
+*/

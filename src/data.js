@@ -1,39 +1,19 @@
-//ESTO ES LO DE ANGIE  NO BORRAR DE 7 A 19
-/*export const filterCandy = (Pokemon) => {
-const candy= Pokemon.filter( (pkm) => {
-  for(let i=0;i<pkm.type.length;i++){
-  if(pkm.type[i] === 'Grass'){
-      return pkm;
-    }
-  }
-});
-console.log(candy)
-return candy;
 
-};*/
+export  const filterType = (Pokemon) => {
+const type = Pokemon.filter((pkm) => {
+  //console.log(pkm.type)
+  return pkm.type[0] === 'Grass' || pkm.type[1] === 'Grass'
 
-
-//en pkm se guardan los 14 pokemones ya filtrados
-export const filterType = (Pokemon) => {
-const type= Pokemon.filter( (pkm) => {
-  for(let i=0;i<pkm.type.length;i++){
-  if(pkm.type[i] === 'Grass'){
-      return pkm;
-    }
-  }
 });
 console.log(type)
 return type;
 };
 
+export  const filterWater = (Pokemon) => {
+const type = Pokemon.filter((pkm) => {
+    return pkm.type[0] === 'Water' || pkm.type[1] === 'Water'
 
-
-
-
-
-
-
-//document.getElementById("demo").innerHTML = allweaknesses;
-//};
-
-//};
+});
+console.log(type)
+return type;
+};
