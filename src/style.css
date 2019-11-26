@@ -1,55 +1,18 @@
-body{
-background:images/fondoPokemon.jpg no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-font-family: 'Heebo', sans-serif
 
-}
 
-img {
-	position: absolute;
-  top:  50px;
-  left: 50px;
-}
 
-/*ocultar y mostrar*/
-#show,#hide {
+#content {
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-wrap:wrap;
+  align-content: center;
 	display:none;
-}
-
- /*botones ocultar y mostrar*/
- input#show:checked ~ div#content {
- 	display:block;
- }
-
- input#hide:checked ~ div#content {
- 	display:none;
- }
-
-/*div de debilidad*/
-div#content {
-	display:none;
-  padding:10px;
-  background-color:#f6f6f6;
-  width:900px;
-	height: 700px;
-  cursor:pointer;
-}
-
-
-
-
-/*No me sirvio es un comentario ahora
-#contenedor1{
-  color:white;
-  line-height: 10px;
-text-align: center;
 
 }
 
 
-#cont {display: none; }
-.show:focus + .hide {display: inline; }
-.show:focus + .hide + #cont {display: block;}*/
+#button{
+  display:block;
+	 }
