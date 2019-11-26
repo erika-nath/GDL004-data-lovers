@@ -1,6 +1,6 @@
 
-import POKEMON from './data/pokemon/pokemon.js'
-console.log(POKEMON);
+//import POKEMON from './data/pokemon/pokemon.js'
+//console.log(POKEMON);
 
 import Pokemon from './data/pokemon/pokemon.js'
 console.log(Pokemon);
@@ -13,8 +13,8 @@ import {filterWater} from './data.js'
 
 let pokew= filterWater(Pokemon);
 
-//console.log(poke)
-/*poke.map((pkm)=>{
+console.log(poke)
+poke.map((pkm)=>{
   //console.log(pkm)
 //let ftp = createElement('span') ya no se va a crear
 const template = `<div>${pkm.name}
@@ -39,8 +39,8 @@ document.addEventListener("click", function(e) {
 
 document.getElementById("button").addEventListener("click", function(e) {
     var content = document.getElementById("content");
-    e.preventDefault();
-    e.stopPropagation();
+    //e.preventDefault();
+   e.stopPropagation();
     if (contentVisible){
         content.style.display = "block";
         contentVisible = false;
@@ -49,4 +49,3 @@ document.getElementById("button").addEventListener("click", function(e) {
         contentVisible = true;
     }
 }, false);
-*/
