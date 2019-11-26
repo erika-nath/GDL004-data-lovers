@@ -1,3 +1,4 @@
+
 //ESTO ES LO DE ANGIE  NO BORRAR DE 7 A 19
 /*export const filterCandy = (Pokemon) => {
 const candy= Pokemon.filter( (pkm) => {
@@ -13,7 +14,7 @@ return candy;
 
 
 //en pkm se guardan los 14 pokemones ya filtrados
-export  const filterType = (Pokemon) => {
+export const filterType = (Pokemon) => {
 const type = Pokemon.filter((pkm) => {
   //console.log(pkm.type)
   return pkm.type[0] === 'Grass' || pkm.type[1] === 'Grass'
@@ -43,9 +44,13 @@ export const ordenName = (Pokemon) => {
 //console.log(ordenNam, 'order')
 return ordenNam
  //console.log(ordenNam)
-
 };
 
+
+
+export  const filterWater = (Pokemon) => {
+const type = Pokemon.filter((pkm) => {
+    return pkm.type[0] === 'Water' || pkm.type[1] === 'Water'
 
 
 
@@ -55,3 +60,7 @@ return ordenNam
 //};
 
 //};
+});
+console.log(type)
+return type;
+};

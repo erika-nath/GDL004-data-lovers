@@ -6,3 +6,22 @@
   flex-wrap:wrap;
   align-content: center;
 }
+
+
+
+
+#content {
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  flex-wrap:wrap;
+  align-content: center;
+	display:none;
+
+}
+
+
+#button{
+  display:block;
+	 }
