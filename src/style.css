@@ -1,27 +1,52 @@
-.contenedor {
-  display: -webkit-flex;
+
+#content1 {
+  /*display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-
-  flex-wrap:wrap;
+  flex-wrap:wrap ;
   align-content: center;
+  background-color:red;*/
+  background-color:yellow;
+
+   display: flex;
+display:none;
+  text-align: center;
+  flex-wrap:wrap ;
+
 }
 
 
 
-
-#content {
-	display: -webkit-flex;
+#content2 {
+  /*display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-
-  flex-wrap:wrap;
+  flex-wrap:wrap ;
   align-content: center;
-	display:none;
+  background-color:red;*/
+  background-color:red;
+  flex-wrap:wrap ;
+
+   display: flex;
+display:none;
+  justify-content: space-between;
 
 }
+.cardWat {
+  flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+
+
+
 
 
 #button{
   display:block;
 	 }
+
+
+   #buttonW{
+     display:block;
+   	 }
