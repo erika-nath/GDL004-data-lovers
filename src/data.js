@@ -52,14 +52,11 @@ export  const filterWater = (Pokemon) => {
 const type = Pokemon.filter((pkm) => {
     return pkm.type[0] === 'Water' || pkm.type[1] === 'Water'
 
-
-
-
-
 //document.getElementById("demo").innerHTML = allweaknesses;
 //};
 
 //};
+
 });
 console.log(type)
 return type;
