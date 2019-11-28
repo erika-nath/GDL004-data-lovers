@@ -1,11 +1,56 @@
 
-#content1 {
-  /*display: -webkit-flex;
+
+
+
+img{
+display:block;
+margin:auto;
+width: 300px; height: 180px;
+}
+img.grass{
+  width: 180px; height: 180px;
+}
+img.water{
+  width: 180px; height: 180px;
+}
+img.rock{
+  width: 180px; height: 180px;
+}
+
+.TyperG{
+
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap:wrap ;
-  align-content: center;
-  background-color:red;*/
+
+}
+#pokebolas{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TyperW{
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+
+
+  flex-wrap: wrap;
+
+}
+.TyperR{
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+
+  #content1 {
+ 
   background-color:yellow;
 
    display: flex;
@@ -14,6 +59,8 @@ display:none;
   flex-wrap:wrap ;
 
 }
+
+  flex-wrap: wrap;
 
 
 
@@ -37,7 +84,6 @@ display:none;
     box-sizing: border-box;
     margin: 1rem .25em;
 }
-
 
 
 
