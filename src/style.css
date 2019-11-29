@@ -2,20 +2,20 @@
 
 
 
-
+#pokebolas{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+}
 
 .TyperG{
 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-}
-#pokebolas{
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-between;
 }
 
 .TyperW {
@@ -25,14 +25,13 @@
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-
-
   flex-wrap: wrap;
   flex-basis:200px;
   flex-grow:1;
   flex-shrink:1;
 
 }
+
 .TyperR{
 
   display: -webkit-flex;
@@ -53,6 +52,10 @@ display:none;
 }
 
 
+  flex-wrap: wrap;
+
+}
+
 
 
 #content2 {
@@ -63,9 +66,8 @@ display:none;
   align-content: center;
   background-color:red;*/
   background-color:red;
-  flex-wrap:wrap ;
-
-   display: flex;
+  flex-flow: row wrap;
+ display: flex;
 display:none;
   justify-content: space-between;
 
@@ -89,15 +91,50 @@ display:none;
   flex: 1 0 200px;*/
     box-sizing: border-box;
     margin: 1rem .25em;
+
+.contenedor1{
+display: flex;
+flex-flow: row wrap;
+justify-content:center;
+align-items: center;
+display:none;
+background-color: yellow;
+
+
 }
 
+.contenedor1.card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin:20px;
+  text-align: center;
+transition: all 0.25s;
+align-self: center;
 
+}
 
+.contenedor1 .card:hover{
+transform: translateY(-15px);
+box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
-#button{
-  display:block;
-	 }
+.contenedor1.card img{
+  width: 330px;
+height: 220px;
+}
 
+.contenedor1.card h1{
+  font-weight: 600;
+}
+
+.contenedor1.card p{
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 1rem;
+  text-align: center;
 
    #buttonW{
      display:block;
@@ -106,3 +143,11 @@ display:none;
      #buttonR{
        display:block;
        }
+
+}
+
+#logoPKM{
+  display: flex;
+justify-content: center;
+}
+
