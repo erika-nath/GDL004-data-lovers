@@ -13,7 +13,7 @@ let pokew= filterWater(Pokemon); //Variable filter water
 ordenName(pokew)//sort de agua
 
 let pokeR= filterRock(Pokemon);//filterType es nuestro filter y Pokemon es la data con la que trabaja
-ordenName(poke)
+ordenName(pokeR)
 
 
 //mostrando filtro Grass a HTML class con map
