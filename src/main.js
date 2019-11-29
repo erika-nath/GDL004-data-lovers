@@ -17,7 +17,7 @@ poke.map((pkm)=>{
 const template = `<div class="card">
 <h1>${pkm.name}</h1>
 <img src="${pkm.img}"></img>
-<p>${pkm.weaknesses}</p>
+<p>Weaknesses: ${pkm.weaknesses}</p>
 </div>`
 document.getElementById('content1').innerHTML += template
 }); //En content se muesta el template
@@ -32,14 +32,21 @@ document.addEventListener("click", function(e) {
 
 document.getElementById("button").addEventListener("click", function(e) {
     var content = document.getElementById("content1");
-    //e.preventDefault();
-   e.stopPropagation();
+    var content2 = document.getElementById("content2");
+    var content3 = document.getElementById("content3");
+    e.preventDefault();
+  // e.stopPropagation();
     if (contentVisible){
         content.style.display = "flex";
         contentVisible = false;
+        content2.style.display = "none";
+        content3.style.display = "none";
+
     } else {
         content.style.display = "none";
         contentVisible = true;
+        content2.style.display = "none";
+        content3.style.display = "none";
     }
 }, false);//fin boton grass
 
@@ -47,10 +54,10 @@ document.getElementById("button").addEventListener("click", function(e) {
 
 //mostrando filtro Water a HTML class con map
 pokew.map((pkm)=>{
-const template1 = `<div class="cardWater">${pkm.name}
-<div class="w"><img src="${pkm.img}"></img>  </div>
-
-<div>${pkm.weaknesses}</div>
+const template1 = `<div class="card2">
+<h1>${pkm.name}</h1>
+<img src="${pkm.img}"></img>
+<p>${pkm.weaknesses}</p>
 </div>`
 document.getElementById('content2').innerHTML += template1
 });
@@ -65,15 +72,22 @@ document.addEventListener("click", function(e) {
 
 document.getElementById("buttonW").addEventListener("click", function(e) {
     var content = document.getElementById("content2");
+    var content2 = document.getElementById("content1");
+    var content3 = document.getElementById("content3");
+
     e.preventDefault();
 
    //e.stopPropagation();
    if (contentVisible){
        content.style.display = "flex";
        contentVisible = false;
+       content2.style.display = "none";
+       content3.style.display = "none";
    } else {
        content.style.display = "none";
        contentVisible = true;
+       content2.style.display = "none";
+       content3.style.display = "none";
 
     }
 }, false);// fin boton water

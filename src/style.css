@@ -1,16 +1,19 @@
+
+
+#pokebolas{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+}
+
 .TyperG{
 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-}
-
-#pokebolas{
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-between;
 }
 
 .TyperW{
@@ -19,20 +22,19 @@
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-
-
   flex-wrap: wrap;
 
 }
+
 .TyperR{
 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+  flex-wrap: wrap;
 
-
-
+}
 
 
 
@@ -45,23 +47,21 @@
   background-color:red;*/
   background-color:red;
   flex-flow: row wrap;
-
-
-   display: flex;
+ display: flex;
 display:none;
   justify-content: space-between;
 
 }
 
 .contenedor1{
-width: 100%;
-max-width: 1200px;
-height: 430px;
 display: flex;
-flex-wrap: wrap;
+flex-flow: row wrap;
 justify-content:center;
-margin:auto;
+align-items: center;
 display:none;
+background-color: yellow;
+
+
 }
 
 .contenedor1.card{
@@ -73,6 +73,8 @@ display:none;
   margin:20px;
   text-align: center;
 transition: all 0.25s;
+align-self: center;
+
 }
 
 .contenedor1 .card:hover{
@@ -93,7 +95,11 @@ height: 220px;
   font-weight: 300;
   font-size: 16px;
   padding: 0 1rem;
+  text-align: center;
+
 }
+
+
 
 
 
@@ -104,4 +110,5 @@ height: 220px;
 
 #logoPKM{
   display: flex;
-justify-content: center;}
+justify-content: center;
+}
