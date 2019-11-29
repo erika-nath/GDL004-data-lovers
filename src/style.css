@@ -1,5 +1,7 @@
 
 
+
+
 #pokebolas{
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16,13 +18,17 @@
 
 }
 
-.TyperW{
+.TyperW {
+
 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-basis:200px;
+  flex-grow:1;
+  flex-shrink:1;
 
 }
 
@@ -32,6 +38,20 @@
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
+}
+
+#content1 {
+
+  background-color:yellow;
+
+   display: flex;
+display:none;
+  text-align: center;
+  flex-wrap:wrap ;
+
+}
+
+
   flex-wrap: wrap;
 
 }
@@ -52,6 +72,25 @@ display:none;
   justify-content: space-between;
 
 }
+#content3 {
+  /*display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap:wrap ;
+  align-content: center;
+  background-color:red;*/
+  background-color:blue;
+  flex-wrap:wrap ;
+
+   display: flex;
+display:none;
+  justify-content: space-between;
+
+}
+.cardWat {
+  flex: 1 0 200px;*/
+    box-sizing: border-box;
+    margin: 1rem .25em;
 
 .contenedor1{
 display: flex;
@@ -97,18 +136,18 @@ height: 220px;
   padding: 0 1rem;
   text-align: center;
 
+   #buttonW{
+     display:block;
+   	 }
+
+     #buttonR{
+       display:block;
+       }
+
 }
-
-
-
-
-
-
-
-
-
 
 #logoPKM{
   display: flex;
 justify-content: center;
 }
+
