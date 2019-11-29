@@ -51,13 +51,6 @@ display:none;
 
 }
 
-
-  flex-wrap: wrap;
-
-}
-
-
-
 #content2 {
   /*display: -webkit-flex;
   display: -ms-flexbox;
@@ -150,4 +143,3 @@ height: 220px;
   display: flex;
 justify-content: center;
 }
-

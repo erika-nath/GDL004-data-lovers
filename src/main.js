@@ -18,9 +18,6 @@ ordenName(pokeR)
 
 //mostrando filtro Grass a HTML class con map
 poke.map((pkm)=>{
-
-
-
 const template = `<div class="card">
 <h1>${pkm.name}</h1>
 <img src="${pkm.img}"></img>
@@ -41,22 +38,23 @@ document.getElementById("button").addEventListener("click", function(e) {
     var content = document.getElementById("content1");
     var content2 = document.getElementById("content2");
     var content3 = document.getElementById("content3");
+
     e.preventDefault();
-  // e.stopPropagation();
-    if (contentVisible){
-        content.style.display = "flex";
-        contentVisible = false;
-        content2.style.display = "none";
-        content3.style.display = "none";
 
-    } else {
-        content.style.display = "none";
-        contentVisible = true;
-        content2.style.display = "none";
-        content3.style.display = "none";
+   //e.stopPropagation();
+   if (contentVisible){
+       content.style.display = "flex";
+       contentVisible = false;
+       content2.style.display = "none";
+       content3.style.display = "none";
+   } else {
+       content.style.display = "none";
+       contentVisible = true;
+       content2.style.display = "none";
+       content3.style.display = "none";
+
     }
-}, false);//fin boton grass
-
+}, false);// fin boton grass
 
 
 //mostrando filtro Water a HTML class con map
@@ -109,7 +107,7 @@ document.getElementById('content3').innerHTML += template2
 }); //En content se muesta el template
 
 
-//boton grass
+//boton Rock
 var contentVisible = true;
 document.addEventListener("click", function(e) {
     var clicked = e.target;
@@ -118,13 +116,22 @@ document.addEventListener("click", function(e) {
 
 document.getElementById("buttonR").addEventListener("click", function(e) {
     var content = document.getElementById("content3");
-    //e.preventDefault();
-   e.stopPropagation();
-    if (contentVisible){
-        content.style.display = "flex";
-        contentVisible = false;
-    } else {
-        content.style.display = "none";
-        contentVisible = true;
+    var content2 = document.getElementById("content1");
+    var content3 = document.getElementById("content2");
+
+    e.preventDefault();
+
+   //e.stopPropagation();
+   if (contentVisible){
+       content.style.display = "flex";
+       contentVisible = false;
+       content2.style.display = "none";
+       content3.style.display = "none";
+   } else {
+       content.style.display = "none";
+       contentVisible = true;
+       content2.style.display = "none";
+       content3.style.display = "none";
+
     }
-}, false);//fin boton grass
+}, false);// fin boton water
