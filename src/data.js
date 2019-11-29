@@ -32,3 +32,13 @@ const type = Pokemon.filter((pkm) => {
 console.log(type)
 return type;
 };
+
+export  const filterRock = (Pokemon) => {
+const type = Pokemon.filter((pkm) => {
+    return pkm.type[0] === 'Rock' || pkm.type[1] === 'Rock'
+
+
+});
+console.log(type)
+return type;
+};

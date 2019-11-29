@@ -2,20 +2,7 @@
 
 
 
-img{
-display:block;
-margin:auto;
-width: 300px; height: 180px;
-}
-img.grass{
-  width: 180px; height: 180px;
-}
-img.water{
-  width: 180px; height: 180px;
-}
-img.rock{
-  width: 180px; height: 180px;
-}
+
 
 .TyperG{
 
@@ -31,7 +18,8 @@ img.rock{
   justify-content: space-between;
 }
 
-.TyperW{
+.TyperW {
+
 
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -40,6 +28,9 @@ img.rock{
 
 
   flex-wrap: wrap;
+  flex-basis:200px;
+  flex-grow:1;
+  flex-shrink:1;
 
 }
 .TyperR{
@@ -48,9 +39,10 @@ img.rock{
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
+}
 
-  #content1 {
- 
+#content1 {
+
   background-color:yellow;
 
    display: flex;
@@ -60,7 +52,6 @@ display:none;
 
 }
 
-  flex-wrap: wrap;
 
 
 
@@ -79,8 +70,23 @@ display:none;
   justify-content: space-between;
 
 }
+#content3 {
+  /*display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap:wrap ;
+  align-content: center;
+  background-color:red;*/
+  background-color:blue;
+  flex-wrap:wrap ;
+
+   display: flex;
+display:none;
+  justify-content: space-between;
+
+}
 .cardWat {
-  flex: 1 0 500px;
+  flex: 1 0 200px;*/
     box-sizing: border-box;
     margin: 1rem .25em;
 }
@@ -96,3 +102,7 @@ display:none;
    #buttonW{
      display:block;
    	 }
+
+     #buttonR{
+       display:block;
+       }
