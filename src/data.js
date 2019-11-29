@@ -27,6 +27,7 @@ export  const filterWater = (Pokemon) => {
 const type = Pokemon.filter((pkm) => {
     return pkm.type[0] === 'Water' || pkm.type[1] === 'Water'
 
+
 });
 console.log(type)
 return type;

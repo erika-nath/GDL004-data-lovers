@@ -14,9 +14,10 @@ ordenName(pokew)//sort de agua
 
 //mostrando filtro Grass a HTML class con map
 poke.map((pkm)=>{
-const template = `<div>${pkm.name}
+const template = `<div class="card">
+<h1>${pkm.name}</h1>
 <img src="${pkm.img}"></img>
-<div>${pkm.weaknesses}</div>
+<p>${pkm.weaknesses}</p>
 </div>`
 document.getElementById('content1').innerHTML += template
 }); //En content se muesta el template
@@ -47,7 +48,8 @@ document.getElementById("button").addEventListener("click", function(e) {
 //mostrando filtro Water a HTML class con map
 pokew.map((pkm)=>{
 const template1 = `<div class="cardWater">${pkm.name}
-<img src="${pkm.img}"></img>
+<div class="w"><img src="${pkm.img}"></img>  </div>
+
 <div>${pkm.weaknesses}</div>
 </div>`
 document.getElementById('content2').innerHTML += template1
