@@ -7,9 +7,19 @@ body {
   marquee {
     display: flex;
 }
+
 html {
   min-height: 100%;
   position: relative;
+}
+
+
+/*Logo  */
+
+#logoPKM{
+  display: flex;
+justify-content: center;
+
 }
 
 
@@ -191,7 +201,7 @@ height: 220px;
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-/********** 2do tooltip water ***/////////
+/********** 2do tooltip water ***/
 .tooltip2 {
 position: relative;
 display: inline-block;
@@ -212,11 +222,27 @@ z-index: 1;
 .tooltip2:hover .tooltiptext2 {
 visibility: visible;
 }
+
 /********** 3er tooltip water ***/
 .tooltip3 {
 position: relative;
 display: inline-block;
+
 border-bottom: 1px dotted black;
+
+  border-bottom: 1px dotted black;
+}
+
+#logoPKM{
+  display: flex;
+justify-content: center;
+}
+@media screen and (max-width:600px){
+  body{
+
+
+}
+
 }
 .tooltip3 .tooltiptext3 {
 visibility: hidden;
@@ -233,16 +259,26 @@ z-index: 1;
 .tooltip3:hover .tooltiptext3 {
 visibility: visible;
 }
+/* footer*/
+
+
+
+
+
 footer .contenedorf {
 	background-color:black;
   color:white;
 width: 100%;
+
 padding: 25px;
+
+
 display: flex;
 justify-content: center;
 	flex-wrap: wrap;
 	bottom: 0;
 	position: absolute;
+
 }
 
 
@@ -266,6 +302,7 @@ justify-content: center;
   body{
 
   }
+
 
 
 }
