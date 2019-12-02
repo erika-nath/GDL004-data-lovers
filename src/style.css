@@ -68,6 +68,18 @@ display: -webkit-flex;
 
 /* contenedor grass*/
 
+
+   display: flex;
+display:none;
+  justify-content: space-between;
+
+}
+.cardWat {
+  flex: 1 0 200px;*/
+    box-sizing: border-box;
+    margin: 1rem .25em;
+  }
+
 .contenedor1{
 display: flex;
 flex-flow: row wrap;
@@ -213,6 +225,7 @@ height: 220px;
   border-radius: 6px;
   padding: 5px 0;
 
+
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -250,8 +263,23 @@ visibility: visible;
 .tooltip3 {
 position: relative;
 display: inline-block;
-border-bottom: 1px dotted black;
+  border-bottom: 1px dotted black;
 }
+
+#logoPKM{
+  display: flex;
+justify-content: center;
+}
+@media screen and (max-width:600px){
+  body{
+
+  
+}
+}
+@media screen and (max-width:360px){
+  body{
+
+  }
 
 .tooltip3 .tooltiptext3 {
 visibility: hidden;
@@ -281,5 +309,6 @@ bottom: 0;
 display: flex;
 justify-content: center;
 text-align: center;
+
 
 }
