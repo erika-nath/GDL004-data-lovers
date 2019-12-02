@@ -1,9 +1,19 @@
 body {
 	background-image: url(images/pkm-uni.jpg);
+	margin: 0;
+  margin-bottom: 40px;
 	}
 marquee {
     display: flex;
 }
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+
 /*Logo  */
 
 #logoPKM{
@@ -221,7 +231,7 @@ height: 220px;
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-/********** 2do tooltip water ***/////////
+/********** 2do tooltip water ***/
 .tooltip2 {
 position: relative;
 display: inline-block;
@@ -246,7 +256,7 @@ z-index: 1;
 visibility: visible;
 }
 
-/********** 3er tooltip water ***/////////
+/********** 3er tooltip water ***/
 .tooltip3 {
 position: relative;
 display: inline-block;
@@ -272,14 +282,26 @@ visibility: visible;
 }
 
 /* footer*/
+
+
+
+
 footer .contenedorf {
 	background-color:black;
   color:white;
 width: 100%;
-padding: 25px;
-bottom: 0;
+padding: 20px;
 display: flex;
 justify-content: center;
-text-align: center;
+	flex-wrap: wrap;
+	bottom: 0;
+	position: absolute;
 
 }
+
+@media screen and (max-width:600px){
+  body{
+}
+}
+@media screen and (max-width:360px){
+  body{  }}
