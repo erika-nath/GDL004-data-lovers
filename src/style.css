@@ -1,14 +1,34 @@
+body {
+	background-image: url(images/pkm-uni.jpg);
+	}
+marquee {
+    display: flex;
+}
+/*Logo  */
 
-
-
+#logoPKM{
+  display: flex;
+justify-content: center;
+}
+/*                 ****Botones POKEBOLAS***          */
 
 #pokebolas{
   display: -webkit-flex;
   display: -ms-flexbox;
   justify-content: space-between;
+	flex-basis:100px;
+  flex-grow:1;
 }
 
-.TyperG{
+ #buttonW{
+     display:block;
+   	 }
+ #buttonR{
+       display:block;
+       }
+
+ /*Boton grass  */
+ .TyperG{
 
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,10 +38,10 @@
 
 }
 
+/*Boton water  */
+
 .TyperW {
-
-
-  display: -webkit-flex;
+display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
@@ -29,8 +49,9 @@
   flex-basis:200px;
   flex-grow:1;
   flex-shrink:1;
-
 }
+
+/*Boton rock  */
 
 .TyperR{
 
@@ -38,59 +59,14 @@
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-}
-
-#content1 {
-
-  background-color:yellow;
-
-   display: flex;
-display:none;
-  text-align: center;
-  flex-wrap:wrap ;
+	flex-wrap: wrap;
 
 }
 
 
-  flex-wrap: wrap;
+/*                    ******Estilo de cartas grass********    */
 
-}
-
-
-
-#content2 {
-  /*display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap:wrap ;
-  align-content: center;
-  background-color:red;*/
-  background-color:red;
-  flex-flow: row wrap;
- display: flex;
-display:none;
-  justify-content: space-between;
-
-}
-#content3 {
-  /*display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap:wrap ;
-  align-content: center;
-  background-color:red;*/
-  background-color:blue;
-  flex-wrap:wrap ;
-
-   display: flex;
-display:none;
-  justify-content: space-between;
-
-}
-.cardWat {
-  flex: 1 0 200px;*/
-    box-sizing: border-box;
-    margin: 1rem .25em;
+/* contenedor grass*/
 
 .contenedor1{
 display: flex;
@@ -98,29 +74,25 @@ flex-flow: row wrap;
 justify-content:center;
 align-items: center;
 display:none;
-background-color: yellow;
-
-
 }
-
-.contenedor1.card{
-  width: 330px;
-  height: 430px;
+/* contenedor child grass*/
+.contenedor1 .card{
+  width: 310px;
+  height:300px;
   border-radius: 8px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
   margin:20px;
   text-align: center;
 transition: all 0.25s;
 align-self: center;
+background-color: white;
 
 }
-
+/* hover de  child grass*/
 .contenedor1 .card:hover{
 transform: translateY(-15px);
-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
+/*estilo imagen  y texto */
 .contenedor1.card img{
   width: 330px;
 height: 220px;
@@ -134,20 +106,179 @@ height: 220px;
   font-weight: 300;
   font-size: 16px;
   padding: 0 1rem;
+  text-align: center;}
+
+
+/*************************Estilo de cartas grass**********************/
+
+	/* contenedor grass*/
+
+	.contenedor2{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:center;
+	align-items: center;
+	display:none;
+	}
+	/* contenedor child grass*/
+	.contenedor2 .card2{
+	  width: 310px;
+	  height:300px;
+	  border-radius: 8px;
+	  margin:20px;
+	  text-align: center;
+	transition: all 0.25s;
+	align-self: center;
+	background-color: white;
+
+	}
+	/* hover de  child grass*/
+	.contenedor2 .card2:hover{
+	transform: translateY(-15px);
+	}
+
+	/*estilo imagen  y texto */
+	.contenedor2.card2 img{
+	  width: 330px;
+	height: 220px;
+	}
+
+	.contenedor2.card2 h1{
+	  font-weight: 600;
+	}
+
+	.contenedor2.card2 p{
+	  font-weight: 300;
+	  font-size: 16px;
+	  padding: 0 1rem;
+	  text-align: center;}
+
+
+		/* ************************Estilo de cartas rock********************* */
+
+			/* contenedor rock*/
+
+			.contenedor3{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content:center;
+			align-items: center;
+			display:none;
+			}
+			/* contenedor child grass*/
+			.contenedor3 .card3{
+			  width: 310px;
+			  height:300px;
+			  border-radius: 8px;
+			  margin:20px;
+			  text-align: center;
+			transition: all 0.25s;
+			align-self: center;
+			background-color: white;
+
+			}
+			/* hover de  child grass*/
+			.contenedor3 .card3:hover{
+			transform: translateY(-15px);
+			}
+
+			/*estilo imagen  y texto */
+			.contenedor3.card3 img{
+			  width: 330px;
+			height: 220px;
+			}
+
+			.contenedor3.card3 h1{
+			  font-weight: 600;
+			}
+
+			.contenedor3.card3 p{
+			  font-weight: 300;
+			  font-size: 16px;
+			  padding: 0 1rem;
+			  text-align: center;}
+
+				.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
   text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
 
-   #buttonW{
-     display:block;
-   	 }
-
-     #buttonR{
-       display:block;
-       }
-
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
 }
 
-#logoPKM{
-  display: flex;
-justify-content: center;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/********** 2do tooltip water ***/////////
+.tooltip2 {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
 }
 
+.tooltip2 .tooltiptext2 {
+visibility: hidden;
+width: 220px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+}
+
+.tooltip2:hover .tooltiptext2 {
+visibility: visible;
+}
+
+/********** 3er tooltip water ***/////////
+.tooltip3 {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+
+.tooltip3 .tooltiptext3 {
+visibility: hidden;
+width: 220px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+}
+
+.tooltip3:hover .tooltiptext3 {
+visibility: visible;
+}
+
+/* footer*/
+footer {
+	background-color:black;
+  color:white;
+width: 100%;
+padding: 20px;
+position:relative;
+height: 50px;
+bottom: 0;
+display: flex;
+}
