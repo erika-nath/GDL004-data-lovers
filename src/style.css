@@ -272,13 +272,14 @@ visibility: visible;
 }
 
 /* footer*/
-footer {
+footer .contenedorf {
 	background-color:black;
   color:white;
 width: 100%;
-padding: 20px;
-position:relative;
-height: 50px;
+padding: 25px;
 bottom: 0;
 display: flex;
+justify-content: center;
+text-align: center;
+
 }
